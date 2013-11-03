@@ -6,6 +6,7 @@ class GoogleDriveConnector
   FIRST_COLUMN = 4
   COLUMNS = 12
 
+
   protected
 
   def sheet
