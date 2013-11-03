@@ -7,12 +7,13 @@ require './settings/credentials'
 require './settings/constants'
 
 # Fillers
-require './fillers/random_filler'
+require './fillers/most_repeated_google_drive_filler'
 # Writers
 require './writers/google_drive_writer'
 
 # Fill a column
-result = RandomFiller.new.fill
+result = MostRepeatedGoogleDriveFiller.new.fill
+
 # Write the filled column
 GoogleDriveWriter.new.write(result)
 
